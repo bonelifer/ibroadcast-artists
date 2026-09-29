@@ -1,0 +1,4 @@
+[flake8]
+# E203 (whitespace before ":") flags the slice spacing PEP 8 recommends
+# for complex slices, e.g. name[: match.start()].
+extend-ignore = E203

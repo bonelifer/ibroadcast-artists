@@ -1,0 +1,25 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: flake8 and compile check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.x"
+      - name: Install flake8
+        run: python -m pip install flake8
+      - name: flake8
+        run: flake8 ibroadcast_artists.py
+      - name: Compile check
+        run: python -m py_compile ibroadcast_artists.py

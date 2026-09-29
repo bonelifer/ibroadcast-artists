@@ -1,0 +1,35 @@
+name: Bug report
+description: Something in ibroadcast_artists.py isn't working.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you ran, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: The script's output or error. Remove your client_id and anything from your token file first.
+      render: text
+  - type: input
+    id: python-version
+    attributes:
+      label: Python version
+      placeholder: "e.g. 3.12.3"
+    validations:
+      required: true
+  - type: input
+    id: ibroadcast-version
+    attributes:
+      label: ibroadcast package version
+      description: Output of `pip show ibroadcast`.
+      placeholder: "e.g. 2.0.1"
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: "e.g. Ubuntu 24.04"

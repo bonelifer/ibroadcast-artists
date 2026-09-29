@@ -1,0 +1,7 @@
+config.ini
+.ibroadcast_token.json
+artists.txt
+artists-*.txt
+
+# Python bytecode
+__pycache__/

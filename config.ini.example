@@ -1,0 +1,12 @@
+[ibroadcast]
+# OAuth2 client_id from media.ibroadcast.com -> side menu -> Apps ->
+# "developer" link at the bottom -> create an app. Only needed until a
+# token is cached in token_file below.
+client_id =
+
+# Text file the deduplicated, sorted artist list is written to.
+output = artists.txt
+
+# Where OAuth tokens are cached after the first successful login, so later
+# runs don't need to re-authorize in a browser.
+token_file = .ibroadcast_token.json

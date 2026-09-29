@@ -1,0 +1,2 @@
+# Unofficial Python client for the iBroadcast API (OAuth device-code login).
+ibroadcast>=2.0.1,<3
